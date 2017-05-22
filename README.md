@@ -22,6 +22,8 @@ Or install it yourself as:
 
 ## Usage
 
+create a signature_verification.yml at config/ and store secret_key here.
+
 **create a signature:**
 
 ```ruby
