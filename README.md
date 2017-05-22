@@ -25,19 +25,19 @@ Or install it yourself as:
 **create a signature:**
 
 ```ruby
-  signature = SignatureVerification.generate_signature(access_key: "adasd", secret_key: "asfew", kind: "financial", time: "1495418953", other_params: others)
+signature = SignatureVerification.generate_signature(access_key: "adasd", secret_key: "asfew", kind: "financial", time: "1495418953", other_params: others)
 ```
 
 The required params include access key, kind, time and the optional params lie on the kind you selected.
-The kind could be: sdk accelerate financial. For financial, the other_params are account_id, game_id; for accelerate, the other_params are access_token.
+The kind could be: sdk accelerate financial. For financial, the other_params may be account_id, game_id; for accelerate, the other_params may be access_token.
 
 **authenticate a signature:**
 
 ```ruby
-  authenticate = SignatureVerification.authenticate(access_key: "adasd", signature: "asfew", kind: "financial", time: "1495418953", other_params: others)
+authenticate = SignatureVerification.authenticate(access_key: "adasd", signature: "asfew", kind: "financial", time: "1495418953", other_params: others)
 ```
 
-The params "secret_key" will be replaced by "signature" and the others are the same with creating a signature.
+The params "secret_key" will be replaced by "signature" and the others are the same as creating a signature.
 
 ## Development
 
