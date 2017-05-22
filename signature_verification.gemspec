@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{create and validate signature}
   spec.description   = %q{create and validate signature}
-  spec.homepage      = "https://github.com"
+  spec.homepage      = "https://github.com/frozenApr/signature_verification#signatureverification"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

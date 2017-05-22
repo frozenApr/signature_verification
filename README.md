@@ -22,7 +22,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+create a signature:
+
+```ruby
+    signature = SignatureVerification.generate_signature(access_key: "adasd", secret_key: "asfew", kind: "financial", time: "1495418953", other_params: others)
+```
+    The required params include access key, kind, time and the optional params lie on the kind you selected.
+    The kind could be: sdk accelerate financial. For financial, the other_params are account_id, game_id; for accelerate, the other_params are access_token.
+
+authenticate a signature:
+
+```ruby
+    authenticate = SignatureVerification.authenticate(access_key: "adasd", signature: "asfew", kind: "financial", time: "1495418953", other_params: others)
+```
+    The params "secret_key" will be replaced by "signature" and the others are the same with creating a signature.
 
 ## Development
 
@@ -38,4 +51,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/sunbei
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
